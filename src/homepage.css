@@ -1,0 +1,14 @@
+:root{
+  --first-color: #a79cf1;
+  --second-color: #8d73bc;
+  --third-color: #a1687f;
+  --four-color: #5556ca;
+  --fifth-color: #402e51;
+}
+
+.homepage{
+  width: 100%;
+  height: 100%;
+  background-color: var(--fifth-color);
+  color: whitesmoke;
+}

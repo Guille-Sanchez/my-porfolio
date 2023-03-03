@@ -1,30 +1,18 @@
+import Footer from './components/footer/Footer'
+import Header from './components/header/Header'
+import ProjectsGrid from './components/projects-grid/ProjectsGrid'
 import './homepage.css'
 
 function App () {
   return (
     <div className='homepage'>
-      <header>
-        <nav aria-label='primary'>
-          <ul>
-            <li>Projects</li>
-            <li>Contact me</li>
-          </ul>
-        </nav>
-      </header>
+      <Header />
 
       <main>
-        <h1>Welcome to my porfolio!</h1>
+        <ProjectsGrid />
       </main>
 
-      <footer>
-        <nav aria-label='secondary'>
-          <ul>
-            <li>WhatsApp</li>
-            <li>LinkedIn</li>
-            <li>Github</li>
-          </ul>
-        </nav>
-      </footer>
+      <Footer />
     </div>
   )
 }

@@ -1,0 +1,72 @@
+.btn-group > * {
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-group > *:hover{
+  cursor: pointer;
+}
+
+.btn-group a:first-child {
+  background-color: var(--first-color);
+  border: 1px solid var(--fifth-color);
+  color: black;
+}
+
+.btn-group a:nth-child(2) {
+  background-color: var(--fifth-color);
+  border: 1px solid var(--first-color);
+  color: whitesmoke;
+}
+
+.card .body {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card img{
+  border-radius: 10px;
+  box-shadow: 0 8px 20px var(--fifth-color);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.card .title {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+.project-grid {
+  display: grid;
+  justify-content: center;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 300px));
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.project-grid a {
+  background-color: var(--fifth-color);
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.project-grid .card{
+  background-color: var(--second-color);
+  border-radius: 15px;
+  box-sizing: border-box;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: auto 1fr auto;
+  padding: 0 var(--left-right-padding) 20px;
+  width: 100%;
+}
+
+.project-grid .btn-group{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+

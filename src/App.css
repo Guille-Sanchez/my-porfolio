@@ -1,0 +1,7 @@
+main {
+  border: 1px solid blue;
+  width: 100%;
+  display: grid;
+  place-items: center;
+
+}

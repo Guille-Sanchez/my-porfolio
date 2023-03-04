@@ -49,7 +49,7 @@ function ProjectsGrid () {
   ]
   const projectId = useId()
   return (
-    <section>
+    <section className='section-grid'>
       <h2>Projects</h2>
       <div className='project-grid'>
         {myProjects.map((project, index) => {

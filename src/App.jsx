@@ -3,6 +3,7 @@ import Header from './components/header/Header'
 import ProjectsGrid from './components/projects-grid/ProjectsGrid'
 import './homepage.css'
 import './App.css'
+import AboutMe from './components/aboutMe/AboutMe'
 
 function App () {
   return (
@@ -10,6 +11,7 @@ function App () {
       <Header />
 
       <main>
+        <AboutMe />
         <ProjectsGrid />
       </main>
 

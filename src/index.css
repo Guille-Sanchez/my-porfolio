@@ -7,7 +7,10 @@
   --third-color: #a1687f;
   --fourth-color: #5556ca;
   --fifth-color: #402e51;
-  --left-right-padding: 20px;
+  --left-right-padding: clamp(20px, 20px + 1vw, 50px);
+  --responsive-width: clamp(375px, 90%, 1500px);
+  --font-size-p: 19px;
+  scroll-behavior: smooth !important;
 }
 
 * {

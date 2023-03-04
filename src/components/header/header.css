@@ -1,3 +1,53 @@
-header nav h1 {
-  margin: 0 !important;
+.dark-mode {
+  display: flex;
+  gap: 20px;
+}
+
+.heading {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+}
+
+.heading nav ul {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.heading nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.heading nav ul li a:hover {
+  color: var(--second-color)
+}
+
+.moon-icon{
+  width: 25px;
+}
+
+.sun-icon {
+  width: 30px;
+}
+
+@media (min-width: 500px) {
+  .heading {
+    font-size: clamp(1rem, 0.754rem + 1.049vw, 2rem);
+    justify-content: space-between;
+    padding: 30px var(--left-right-padding) 30px;
+  }
+
+  .heading nav {
+    width: clamp(300px, 300px + 15vw, 500px);
+  }
+  
+  .heading nav ul {
+    justify-content: space-evenly;
+  }
 }

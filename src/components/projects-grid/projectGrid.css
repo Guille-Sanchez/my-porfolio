@@ -49,13 +49,12 @@
 }
 
 .project-grid {
-  border: 2px solid red;
   box-sizing: content-box;
   display: grid;
   justify-content: space-evenly;
   gap: 30px;
   grid-template-columns: repeat(auto-fill, minmax(300px, clamp(340px, 340px + 3%, 400px)));
-  padding-bottom: 20px;
+  padding: 0 var(--left-right-padding);
 }
 
 .project-grid a {
@@ -70,7 +69,7 @@
   display: grid;
   gap: 10px;
   grid-template-rows: auto 1fr auto auto;
-  padding: 0 var(--left-right-padding) 20px;
+  padding: 0 20px 20px;
   width: 100%;
 }
 
@@ -80,7 +79,34 @@
   gap: 20px;
 }
 
-.section-grid {
+.container-project-grid {
   width: clamp(375px, 90%, 1500px);
 }
 
+.h2-projects {
+  margin: 0;
+  padding: 20px 0 20px var(--left-right-padding) !important;
+}
+
+.section-projects {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+.section-projects h2 {
+  align-self: flex-start;
+  text-align: left;
+  background-color: aqua;
+  padding: 20px 0 20px var(--left-right-padding) !important;
+}
+
+@media (min-width: 500px) {
+  .section-projects h2 {
+    width: var(--responsive-width);
+    align-self: center !important;
+    padding: 20px 0 !important;
+    font-size: clamp(1.5rem, 1.054rem + 1.429vw, 2.75rem);
+  }
+}

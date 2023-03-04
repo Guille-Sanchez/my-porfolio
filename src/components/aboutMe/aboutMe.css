@@ -1,0 +1,32 @@
+.about-me {
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 var(--left-right-padding);
+}
+
+.about-me > * {
+  margin: 0;
+}
+
+.about-me p {
+  font-size: var(--font-size-p);
+  font-weight: 900px;
+}
+
+.section-about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 500px){
+  .about-me{
+    width: var(--responsive-width);
+  }
+
+  .about-me p{
+    font-size: clamp(1rem, 0.754rem + 1.049vw, 2rem);
+  }
+}

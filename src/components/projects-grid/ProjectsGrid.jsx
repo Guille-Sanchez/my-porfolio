@@ -49,22 +49,24 @@ function ProjectsGrid () {
   ]
   const projectId = useId()
   return (
-    <section className='section-grid'>
-      <h2>Projects</h2>
-      <div className='project-grid'>
-        {myProjects.map((project, index) => {
-          return (
-            <div key={`${projectId}-${index}`} className='card'>
-              <p className='title'>{project.title}</p>
-              <img src={project.image} alt={project.title} />
-              <p className='body'>{project.body}</p>
-              <div className='btn-group'>
-                <a href={project.urlrepo}>Repository</a>
-                <a href={project.urlLive}>Live Demo</a>
+    <section id='my-projects' className='section-projects'>
+      <h2 className='h2-projects'>Projects</h2>
+      <div className='container-project-grid'>
+        <div className='project-grid'>
+          {myProjects.map((project, index) => {
+            return (
+              <div key={`${projectId}-${index}`} className='card'>
+                <p className='title'>{project.title}</p>
+                <img src={project.image} alt={project.title} />
+                <p className='body'>{project.body}</p>
+                <div className='btn-group'>
+                  <a href={project.urlrepo}>Repository</a>
+                  <a href={project.urlLive}>Live Demo</a>
+                </div>
               </div>
-            </div>
-          )
-        })}
+            )
+          })}
+        </div>
       </div>
     </section>
   )

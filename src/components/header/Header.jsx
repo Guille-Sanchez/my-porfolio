@@ -1,13 +1,18 @@
 import './header.css'
+import { IconSun, IconMoon } from '../../assets/icons.jsx'
 
 function Header () {
   return (
-    <header>
-      <nav aria-label='primary'>
-        <h1>Welcome to my porfolio!</h1>
-        <ul>
-          <li>Projects</li>
-          <li>Contact me</li>
+    <header className='heading'>
+      <div className='dark-mode'>
+        {IconSun}
+        {IconMoon}
+      </div>
+      <nav>
+        <ul aria-label='primary navigation group'>
+          <li><a href='#about-me'>About me</a></li>
+          <li><a href='#my-projects'>Projects</a></li>
+          <li><a href='#contact-me'>Contact me</a></li>
         </ul>
       </nav>
     </header>

@@ -1,3 +1,30 @@
+footer {
+  padding-top: 20px;
+  width: 100%;
+}
+
+footer .gmail-icon {
+  width: 30px;
+}
+
+footer .github-icon {
+  width: 30px;
+}
+
+footer .linkedin-icon {
+  width: 30px;
+}
+
 footer nav ul {
   margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: white;
 }

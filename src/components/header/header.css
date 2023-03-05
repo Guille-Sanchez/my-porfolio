@@ -1,6 +1,10 @@
 .dark-mode {
   display: flex;
-  gap: 20px;
+  gap: 10px;
+}
+
+.dark-mode > *:hover {
+  cursor: pointer;
 }
 
 .heading {
@@ -21,6 +25,7 @@
 
 .heading nav ul li a {
   color: white;
+  font-weight: 600;
   text-decoration: none;
 }
 

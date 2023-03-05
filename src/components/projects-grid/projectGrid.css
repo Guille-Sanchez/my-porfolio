@@ -92,21 +92,19 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  border: 1px solid red;
 }
 
 .section-projects h2 {
   align-self: flex-start;
-  text-align: left;
-  background-color: aqua;
   padding: 20px 0 20px var(--left-right-padding) !important;
+  text-align: left;
 }
 
 @media (min-width: 500px) {
   .section-projects h2 {
-    width: var(--responsive-width);
     align-self: center !important;
-    padding: 20px 0 !important;
     font-size: clamp(1.5rem, 1.054rem + 1.429vw, 2.75rem);
+    padding: 20px 0 !important;
+    width: var(--responsive-width);
   }
 }

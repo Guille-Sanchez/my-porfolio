@@ -12,13 +12,14 @@
 
 .about-me p {
   font-size: var(--font-size-p);
-  font-weight: 900px;
+  font-weight: 600;
 }
 
 .section-about-me {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 30px;
 }
 
 @media (min-width: 500px){
@@ -28,5 +29,6 @@
 
   .about-me p{
     font-size: clamp(1rem, 0.754rem + 1.049vw, 2rem);
+    line-height: 2;
   }
 }

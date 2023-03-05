@@ -12,7 +12,7 @@ function Header () {
         <ul aria-label='primary navigation group'>
           <li><a href='#about-me'>About me</a></li>
           <li><a href='#my-projects'>Projects</a></li>
-          <li><a href='#contact-me'>Contact me</a></li>
+          <li><a href='#contact-me'>Contact</a></li>
         </ul>
       </nav>
     </header>

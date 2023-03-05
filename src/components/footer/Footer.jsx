@@ -11,6 +11,7 @@ function Footer () {
           <li><a href='https://www.linkedin.com/in/guillermo-sanchez-52a616268/'>{IconLinkedin}</a></li>
         </ul>
       </nav>
+      <p><em>Guillermo Sanchez</em></p>
     </footer>
   )
 }

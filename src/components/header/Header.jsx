@@ -6,7 +6,7 @@ import { DarkmodeContext } from '../../context/darkMode'
 function Header () {
   const { darkMode, setDarkMode } = useContext(DarkmodeContext)
   return (
-    <header className='heading'>
+    <header>
       <div className={`dark-mode${darkMode ? '-active' : '-inactive'}`}>
         <button onClick={() => setDarkMode((prev) => !prev)}>
           {darkMode ? IconSun : IconMoon}

@@ -10,21 +10,22 @@
 }
 
 .dark-mode-inactive button {
-  color: black;
+  background-color: var(--inactive-dark-mode-background);
+
 }
 
 .dark-mode-active > *, .dark-mode-inactive button > * {
   cursor: pointer;
 }
 
-.heading {
+header {
   align-items: center;
   display: flex;
   justify-content: space-evenly;
   padding-top: 30px;
 }
 
-.heading nav ul {
+header nav ul {
   display: flex;
   gap: 10px;
   justify-content: space-between;
@@ -33,24 +34,24 @@
   padding: 0;
 }
 
-.heading nav ul li a {
+header nav ul li a {
   font-weight: 600;
   text-decoration: none;
 }
 
-.heading nav .dark-mode-active a {
+header .dark-mode-active a {
   color: whitesmoke;
 }
 
-.heading nav .dark-mode-inactive a {
-  color: black;
+header .dark-mode-inactive a {
+  color: var(--inactive-dark-mode-font-color);;
 }
 
-.heading nav .dark-mode-active a:hover {
+header .dark-mode-active a:hover {
   color: var(--second-color);
 }
 
-.moon-icon{
+.moon-icon {
   height: 30px;
 }
 
@@ -59,17 +60,17 @@
 }
 
 @media (min-width: 500px) {
-  .heading {
+  header {
     font-size: clamp(1rem, 0.754rem + 1.049vw, 2rem);
     justify-content: space-between;
     padding: 30px var(--left-right-padding) 30px;
   }
 
-  .heading nav {
+  header nav {
     width: clamp(300px, 300px + 15vw, 500px);
   }
   
-  .heading nav ul {
+  header nav ul {
     justify-content: space-evenly;
   }
   .moon-icon{

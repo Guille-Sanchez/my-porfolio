@@ -6,9 +6,10 @@ function AboutMe () {
       <div className='about-me' id='about-me'>
         <h1>Front-End Developer</h1>
         <p>
-          Hi! I am Guillermo. A little bit about me, it's that I am a self-taught  front-end developer.
+          Hi! I am Guillermo. A little bit about me, it's that I am a self-taught front-end developer.
           Not surprisingly, the first programming language I picked up was Python due to its simplicity and high functionality.
-          However, after a while I decided to learn a more opinionated language, Ruby with its framework on Rails (RoR).
+        </p>
+        <p>After some time, I decided to learn a more opinionated language, Ruby with its framework on Rails (RoR).
           Making this change provided me with good programming practices that I still use to this day.
         </p>
         <p>

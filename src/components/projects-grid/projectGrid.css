@@ -9,13 +9,19 @@
   cursor: pointer;
 }
 
-.btn-group a:first-child {
+.card-dark-mode-active .btn-group a:first-child {
   background-color: var(--first-color);
   border: 1px solid var(--fifth-color);
   color: black;
 }
 
-.btn-group a:first-child:hover {
+.card-dark-mode-inactive .btn-group a:first-child {
+  background-color: orange;
+  border: 1px solid var(--fifth-color);
+  color: black;
+}
+
+.btn-group  a:first-child:hover {
   filter: brightness(75%);
 }
 
@@ -23,8 +29,14 @@
   filter: brightness(135%);
 }
 
-.btn-group a:nth-child(2) {
+.card-dark-mode-active .btn-group a:nth-child(2) {
   background-color: var(--fifth-color);
+  border: 1px solid var(--first-color);
+  color: whitesmoke;
+}
+
+.card-dark-mode-inactive .btn-group a:nth-child(2) {
+  background-color: green;
   border: 1px solid var(--first-color);
   color: whitesmoke;
 }
@@ -63,14 +75,22 @@
   text-decoration: none;
 }
 
-.project-grid .card{
-  background-color: var(--second-color);
-  border-radius: 15px;
+.project-grid div[class='card'] {
   display: grid;
   gap: 10px;
   grid-template-rows: auto 1fr auto auto;
   padding: 0 20px 20px;
   width: 100%;
+}
+
+.project-grid .card-dark-mode-active {
+  background-color: var(--second-color);
+  border-radius: 15px;
+}
+
+.project-grid .card-dark-mode-inactive{
+  background-color: blue;
+  border-radius: 15px;
 }
 
 .project-grid .btn-group{

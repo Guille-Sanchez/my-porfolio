@@ -24,8 +24,13 @@ footer nav ul {
   padding: 0;
 }
 
-footer nav ul li a {
+footer nav .dark-mode-active li a {
   color: white;
+  text-decoration: none;
+}
+
+footer nav .dark-mode-inactive li a {
+  color: black;
   text-decoration: none;
 }
 

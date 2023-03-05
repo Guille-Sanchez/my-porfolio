@@ -1,5 +1,7 @@
-import { useId } from 'react'
+import { useContext, useId } from 'react'
 import './projectGrid.css'
+import { DarkmodeContext } from '../../context/darkMode'
+
 function ProjectsGrid () {
   // screenshots iphone 12/13 mini
   const myProjects = [
@@ -48,6 +50,8 @@ function ProjectsGrid () {
     }
   ]
   const projectId = useId()
+  const { darkMode } = useContext(DarkmodeContext)
+
   return (
     <section id='my-projects' className='section-projects'>
       <h2 className='h2-projects'>Projects</h2>
@@ -55,13 +59,15 @@ function ProjectsGrid () {
         <div className='project-grid'>
           {myProjects.map((project, index) => {
             return (
-              <div key={`${projectId}-${index}`} className='card'>
-                <p className='title'>{project.title}</p>
-                <img src={project.image} alt={project.title} />
-                <p className='body'>{project.body}</p>
-                <div className='btn-group'>
-                  <a href={project.urlrepo}>Repository</a>
-                  <a href={project.urlLive}>Live Demo</a>
+              <div key={`${projectId}-${index}`} className={`card-dark-mode${darkMode ? '-active' : '-inactive'}`}>
+                <div className='card'>
+                  <p className='title'>{project.title}</p>
+                  <img src={project.image} alt={project.title} />
+                  <p className='body'>{project.body}</p>
+                  <div className='btn-group'>
+                    <a href={project.urlrepo}>Repository</a>
+                    <a href={project.urlLive}>Live Demo</a>
+                  </div>
                 </div>
               </div>
             )

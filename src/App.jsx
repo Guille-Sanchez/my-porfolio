@@ -2,12 +2,12 @@ import Footer from './components/footer/Footer'
 import Header from './components/header/Header'
 import ProjectsGrid from './components/projects-grid/ProjectsGrid'
 import './homepage.css'
-import './App.css'
 import AboutMe from './components/aboutMe/AboutMe'
+import { DarkModeProvider } from '../src/context/darkMode'
 
 function App () {
   return (
-    <div className='homepage'>
+    <DarkModeProvider>
       <Header />
 
       <main>
@@ -16,7 +16,7 @@ function App () {
       </main>
 
       <Footer />
-    </div>
+    </DarkModeProvider>
   )
 }
 

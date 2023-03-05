@@ -6,7 +6,12 @@
   --fifth-color: #402e51;
 }
 
-.homepage{
-  /*max-width: 1200px;*/
+.homepage {
+  height: 100%;
+  width: 100%;
+}
+
+.homepage-darkmode {
+  background-color: var(--fifth-color);
   color: whitesmoke;
 }

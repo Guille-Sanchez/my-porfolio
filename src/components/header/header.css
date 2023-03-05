@@ -1,9 +1,19 @@
-.dark-mode {
-  display: flex;
-  gap: 10px;
+.dark-mode-active button, .dark-mode-inactive button {
+  padding: 0;
+  margin: 0;
+  border: none;
 }
 
-.dark-mode > *:hover {
+.dark-mode-active button {
+  background-color: var(--fifth-color);
+  color: white;
+}
+
+.dark-mode-inactive button {
+  color: black;
+}
+
+.dark-mode-active > *, .dark-mode-inactive button > * {
   cursor: pointer;
 }
 
@@ -24,17 +34,24 @@
 }
 
 .heading nav ul li a {
-  color: white;
   font-weight: 600;
   text-decoration: none;
 }
 
-.heading nav ul li a:hover {
-  color: var(--second-color)
+.heading nav .dark-mode-active a {
+  color: whitesmoke;
+}
+
+.heading nav .dark-mode-inactive a {
+  color: black;
+}
+
+.heading nav .dark-mode-active a:hover {
+  color: var(--second-color);
 }
 
 .moon-icon{
-  width: 25px;
+  height: 30px;
 }
 
 .sun-icon {
@@ -54,5 +71,12 @@
   
   .heading nav ul {
     justify-content: space-evenly;
+  }
+  .moon-icon{
+    height: clamp(1rem, 0.754rem + 1.049vw, 2rem);
+  }
+  
+  .sun-icon {
+    width: clamp(1rem, 0.754rem + 1.049vw, 2rem);
   }
 }

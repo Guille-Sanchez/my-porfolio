@@ -14,7 +14,7 @@ function Footer () {
         >
           <li><a href='mailto:guillesafran@gmail.com'>{IconGmail}</a></li>
           <li><a href='https://github.com/Guille-Sanchez'>{IconGithub}</a></li>
-          <li><a href='https://www.linkedin.com/in/guillermo-sanchez-52a616268/'>{IconLinkedin}</a></li>
+          <li><a href='https://www.linkedin.com/in/guillermo-sanchez-developer/'>{IconLinkedin}</a></li>
         </ul>
       </nav>
       <p><em>Guillermo Sanchez</em></p>

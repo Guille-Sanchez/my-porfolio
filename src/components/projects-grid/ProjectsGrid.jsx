@@ -22,51 +22,57 @@ function ProjectsGrid () {
       urlrepo: 'https://github.com/Guille-Sanchez/countries-api'
     },
     {
-      body: 'This e-commerce product card website is all about design. This projects shows a good eye for details and user experience.',
+      body: 'Perform mathmatical operations like addition, subtraction, multiplication, and division with this simple calculator.',
       id: 3,
+      image: '../../screenshots/calculator-app.png',
+      title: 'Calculator App',
+      urlLive: 'https://calculator-app-chichodev.netlify.app/',
+      urlrepo: 'https://github.com/Guille-Sanchez/calculator'
+    }, {
+      body: 'This e-commerce product card website is all about design. This projects shows a good eye for details and user experience.',
+      id: 4,
       image: '../../screenshots/e-commerce.png',
       title: 'Product card',
       urlLive: 'https://e-commerce-chichodev.netlify.app/',
       urlrepo: 'https://github.com/Guille-Sanchez/e-commerce'
-    },
-    {
+    }, {
       body: 'This project features a controlled form for a greater user experience as well as some sorting mechanisms.',
-      id: 4,
+      id: 5,
       image: '../../screenshots/buscador-de-peliculas.png',
       title: 'Movie Search Website',
       urlLive: 'https://buscador-de-peliculas-chicho.netlify.app/',
       urlrepo: 'https://github.com/Guille-Sanchez/buscador-de-peliculas'
     }, {
       body: 'Insert a url and shorten it! This website saves your shortened-link on local-storage so you never lose it.',
-      id: 5,
+      id: 6,
       image: '../../screenshots/url-shortener.png',
       title: 'Url Shortener',
       urlLive: 'https://url-shortener-vite-app.netlify.app/',
       urlrepo: 'https://github.com/Guille-Sanchez/url-shortner'
     }, {
       body: 'Bored? This website gives you a random piece of art and tries to guess the artist nationality.',
-      id: 6,
+      id: 7,
       image: '../../screenshots/get-art-piece.png',
       title: 'Get Art Piece',
       urlLive: 'https://art-from-the-art-institute-of-chicago.netlify.app/',
       urlrepo: 'https://github.com/Guille-Sanchez/DisplayArt'
     }, {
       body: 'Manage Company\'s homepage. This project presents small details which put together bring a good user experience.',
-      id: 7,
+      id: 8,
       image: '../../screenshots/manage.png',
       title: 'Manage\'s homepage',
       urlLive: 'https://glittering-lamington-b0ab80.netlify.app/',
       urlrepo: 'https://github.com/Guille-Sanchez/manage-landing-page'
     }, {
       body: 'Ever wonder what the current transaction for a given currency is? Well, now you can quickly check it on this website.',
-      id: 8,
+      id: 9,
       image: '../../screenshots/bank-exchange.png',
       title: 'Currency Exhange',
       urlLive: 'https://bank-exchange-chicho.netlify.app/',
       urlrepo: 'https://github.com/Guille-Sanchez/bank_exchange'
     }, {
       body: 'Do you have some spare time to kill with a friend? Why don\'t you use it to play the classic game of tic-tac-toe?',
-      id: 9,
+      id: 10,
       image: '../../screenshots/tic-tac-toe.png',
       title: 'Tic-Tac-Toe',
       urlLive: 'https://tic-tac-toe-chicho.netlify.app/',
